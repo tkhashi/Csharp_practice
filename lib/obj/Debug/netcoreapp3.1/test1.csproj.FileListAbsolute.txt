@@ -11,3 +11,16 @@ C:\Users\takahashikazuhiro\source\repos\test1\obj\Debug\netcoreapp3.1\test1.cspr
 C:\Users\takahashikazuhiro\source\repos\test1\obj\Debug\netcoreapp3.1\test1.dll
 C:\Users\takahashikazuhiro\source\repos\test1\obj\Debug\netcoreapp3.1\test1.pdb
 C:\Users\takahashikazuhiro\source\repos\test1\obj\Debug\netcoreapp3.1\test1.genruntimeconfig.cache
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.exe
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.deps.json
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.runtimeconfig.json
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.runtimeconfig.dev.json
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.dll
+Z:\Desktop\work\vagrant\win_test\lib\bin\Debug\netcoreapp3.1\test1.pdb
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.csprojAssemblyReference.cache
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.AssemblyInfoInputs.cache
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.AssemblyInfo.cs
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.csproj.CoreCompileInputs.cache
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.dll
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.pdb
+Z:\Desktop\work\vagrant\win_test\lib\obj\Debug\netcoreapp3.1\test1.genruntimeconfig.cache
