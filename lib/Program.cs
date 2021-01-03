@@ -8,18 +8,16 @@ namespace test1 {
 	class Program {
 		static void Main(string[] args){
             int count = 10;
-            string password = MakeLowerAlphabet(count);
+            string password = MakeMark(count);
             Console.WriteLine(password);
         }
-        private static string MakeLowerAlphabet(int count)
-        {
+        private static string MakeMark(int count){
+            string[] marks = { "!","#","$","%","&","@"};
             Random random = new Random();
             string password = string.Empty;
-            for (int i = 0; i < count; i++)
-            {
-                int n = random.Next(97, 123);
-                char c = (char)n;
-                password += c.ToString();
+            for (int i = 0; i < count; i++) {
+                int n = random.Next(marks.Length);
+                password += marks[n];
             }
             return password;
         }
