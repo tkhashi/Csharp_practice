@@ -10,8 +10,8 @@ namespace Password_Creater
         static void Main(string[] args) {
             Random random = new Random();
             int count = 12;
-            PasswordGenerator generator = new PasswordGenerator();
-            string password = generator.MakePassword(random, count);
+            PasswordGenerator generator = new PasswordGenerator(random);
+            string password = generator.MakePassword(count);
             Console.WriteLine(password);
             Console.ReadKey();
         }
