@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Password_Creater
 {
-    class AllLetterFactory : LetterFactory
+    class AllLetterFactory : ILetterFactory
     {
-        public override Letter Create(Random random, int i)
+        public Letter Create(Random random, int i)
         {
             Letter letter = null;
             int n = i % 4;

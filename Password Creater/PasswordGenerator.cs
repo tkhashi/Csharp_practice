@@ -11,7 +11,7 @@ namespace Password_Creater
         public PasswordGenerator(Random random) {
             this.random = random;
         }
-        public string MakePassword(int count, LetterFactory factory)
+        public string MakePassword(int count, ILetterFactory factory)
         {
             string password = string.Empty;
             for (int i = 0; i < count; i++)

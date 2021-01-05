@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Password_Creater
 {
-    public class NonMarkLetterFactory
+    public class NonMarkLetterFactory : ILetterFactory
     {
         public Letter Create(Random random, int i)
         {
