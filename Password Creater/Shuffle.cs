@@ -8,7 +8,7 @@ namespace Password_Creater
 {
     public class Shuffle
     {
-        public string Exceute(string password)
+        public static string Exceute(string password)
         {
             char x = ' ';
             string res = string.Empty;

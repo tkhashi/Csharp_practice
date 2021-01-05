@@ -19,8 +19,7 @@ namespace Password_Creater
                 Letter letter = factory.Create(random,i);
                 password += letter.GetLetter();
             }
-            Shuffle shuffle = new Shuffle();
-            return shuffle.Exceute(password);
+            return Shuffle.Exceute(password);
         }
     }
 }
