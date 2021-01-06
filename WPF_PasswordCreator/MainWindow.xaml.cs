@@ -29,5 +29,10 @@ namespace WPF_PasswordCreator
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
