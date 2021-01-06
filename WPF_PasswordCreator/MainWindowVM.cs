@@ -29,10 +29,17 @@ namespace WPF_PasswordCreator
             get { return numOfLetters; }
             set { numOfLetters = value; }
         }
+        private string createdPassword;
+        public string CreatedPassword
+        {
+            get { return createdPassword;}
+            set { createdPassword = value; }
+        }
         public MainWindowVM()
         {
             NumOfLetters = 20;
             IsNonMark = false;
+            CreatedPassword = "This is WPF Application";
         }
     }
 }
