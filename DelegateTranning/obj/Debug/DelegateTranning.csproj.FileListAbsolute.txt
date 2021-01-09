@@ -1,0 +1,7 @@
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\obj\Debug\DelegateTranning.csprojAssemblyReference.cache
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\obj\Debug\DelegateTranning.csproj.CoreCompileInputs.cache
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\bin\Debug\DelegateTranning.exe.config
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\bin\Debug\DelegateTranning.exe
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\bin\Debug\DelegateTranning.pdb
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\obj\Debug\DelegateTranning.exe
+Z:\Desktop\work\vagrant\win_test\DelegateTranning\obj\Debug\DelegateTranning.pdb
