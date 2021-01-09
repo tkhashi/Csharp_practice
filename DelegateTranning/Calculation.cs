@@ -19,6 +19,8 @@ namespace DelegateTranning
             //int ans = function(n);
             //int ans = Power(n);
             return Power(n);
+            //これでも行けてしまうが、publicにPower(n)とメソッド直書きするのがよくない？
+            //値のさいだいにゅうもできてしまうが。。
         }
     }
 }
