@@ -13,14 +13,16 @@ namespace DelegateTranning
         {
             return n * n;
         }
+        private int GetDouble(int n)
+        {
+            return n * 2;
+        }
         public int Execute(int n)
         {
-            //Function function = Power;
-            //int ans = function(n);
-            //int ans = Power(n);
-            return Power(n);
-            //これでも行けてしまうが、publicにPower(n)とメソッド直書きするのがよくない？
-            //値のさいだいにゅうもできてしまうが。。
+            Func<int, int> function = GetDouble;
+            //Function function = GetDouble;
+            int ans = function(n);
+            return ans;
         }
     }
 }

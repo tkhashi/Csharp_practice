@@ -13,8 +13,8 @@ namespace DelegateTranning
             var calculation = new Calculation();
             int ans = calculation.Execute(7);
             Console.WriteLine(ans);
-            int ans2 = calculation.Execute(9);
-            Console.WriteLine(ans2);
+            //int ans2 = calculation.Execute(9);
+            //Console.WriteLine(ans2);
         }
     }
 }
