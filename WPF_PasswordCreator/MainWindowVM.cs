@@ -7,7 +7,7 @@ using Password_Creater;
 
 namespace WPF_PasswordCreator
 {
-    public class MainWindowVM
+    public class MainWindowVM : ViewModel
     {
         private ILetterFactory factory;
         private bool isNonMark;
@@ -33,13 +33,24 @@ namespace WPF_PasswordCreator
         public string CreatedPassword
         {
             get { return createdPassword;}
-            set { createdPassword = value; }
+            set { createdPassword = value; OnPropertyChanged(); }
+        }
+        public DelegateCommand MakePassword { get; private set; }
+        private void MakePasswordExecute()
+        {
+            Random random = new Random();
+            var generator = new PasswordGenerator(random);
+            CreatedPassword = generator.MakePassword(NumOfLetters, factory);
         }
         public MainWindowVM()
         {
             NumOfLetters = 20;
             IsNonMark = false;
-            CreatedPassword = "This is WPF Application";
+            MakePassword = new DelegateCommand(MakePasswordExecute, CanMakePasswordExecute);
+        }
+        private bool CanMakePasswordExecute()
+        {
+            return NumOfLetters > 10;
         }
     }
 }
