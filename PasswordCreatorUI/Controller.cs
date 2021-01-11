@@ -21,19 +21,25 @@ namespace PasswordCreatorUI
         public bool IsNonMark
         {
             get { return isNonMark; }
-            set
-            {
-                isNonMark = value;
-                if (isNonMark)
-                {
-                    factory = new NonMarkLetterFactory();
-                }
-                else
-                {
-                    factory = new AllLetterFactory();
-                }
+            set { isNonMark = value;
+                if (isNonMark) factory = new NonMarkLetterFactory();
             }
         }
+        private bool isAll;
+        public bool IsAll {
+            get { return isAll; }
+            set { isAll = value;
+                if (isAll) factory = new AllLetterFactory();
+            }
+        }
+        private bool isMark2;
+        public bool IsMark2 {
+            get { return isMark2; }
+            set { isMark2 = value;
+                if (isMark2) factory = new Mark2LetterFactory();
+            }
+        }
+
         public string MakePasssword()
         {
             var generator = new PasswordGenerator(random);

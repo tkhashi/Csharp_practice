@@ -22,6 +22,7 @@ namespace PasswordCreatorUI
             NumOfLetters.Maximum = 32;
             this.Text = "Password Creator";
             Password.Font = new Font("Meiryo", 14);
+            All.Checked = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -44,10 +45,20 @@ namespace PasswordCreatorUI
         {
 
         }
-
-        private void IsNonMark_CheckedChanged(object sender, EventArgs e)
+        
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            controller.IsNonMark = IsNonMark.Checked;
+            controller.IsAll = All.Checked;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            controller.IsNonMark = NonMark.Checked;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            controller.IsMark2 = Mark2.Checked;
         }
     }
 }

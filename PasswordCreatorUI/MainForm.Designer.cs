@@ -33,16 +33,18 @@ namespace PasswordCreatorUI
             this.label1 = new System.Windows.Forms.Label();
             this.NumOfLetters = new System.Windows.Forms.NumericUpDown();
             this.Password = new System.Windows.Forms.TextBox();
-            this.IsNonMark = new System.Windows.Forms.CheckBox();
+            this.All = new System.Windows.Forms.RadioButton();
+            this.NonMark = new System.Windows.Forms.RadioButton();
+            this.Mark2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.NumOfLetters)).BeginInit();
             this.SuspendLayout();
             // 
             // Execute
             // 
             this.Execute.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.Execute.Location = new System.Drawing.Point(182, 73);
+            this.Execute.Location = new System.Drawing.Point(215, 33);
             this.Execute.Name = "Execute";
-            this.Execute.Size = new System.Drawing.Size(274, 21);
+            this.Execute.Size = new System.Drawing.Size(274, 23);
             this.Execute.TabIndex = 0;
             this.Execute.Text = "パスワード生成";
             this.Execute.UseVisualStyleBackColor = true;
@@ -51,7 +53,7 @@ namespace PasswordCreatorUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 75);
+            this.label1.Location = new System.Drawing.Point(12, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
@@ -59,7 +61,7 @@ namespace PasswordCreatorUI
             // 
             // NumOfLetters
             // 
-            this.NumOfLetters.Location = new System.Drawing.Point(101, 73);
+            this.NumOfLetters.Location = new System.Drawing.Point(77, 38);
             this.NumOfLetters.Name = "NumOfLetters";
             this.NumOfLetters.Size = new System.Drawing.Size(75, 19);
             this.NumOfLetters.TabIndex = 2;
@@ -73,23 +75,50 @@ namespace PasswordCreatorUI
             this.Password.TabIndex = 3;
             this.Password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // IsNonMark
+            // All
             // 
-            this.IsNonMark.AutoSize = true;
-            this.IsNonMark.Location = new System.Drawing.Point(12, 183);
-            this.IsNonMark.Name = "IsNonMark";
-            this.IsNonMark.Size = new System.Drawing.Size(75, 17);
-            this.IsNonMark.TabIndex = 4;
-            this.IsNonMark.Text = "記号なし";
-            this.IsNonMark.UseVisualStyleBackColor = true;
-            this.IsNonMark.CheckedChanged += new System.EventHandler(this.IsNonMark_CheckedChanged);
+            this.All.AutoSize = true;
+            this.All.Location = new System.Drawing.Point(34, 73);
+            this.All.Name = "All";
+            this.All.Size = new System.Drawing.Size(73, 17);
+            this.All.TabIndex = 4;
+            this.All.TabStop = true;
+            this.All.Text = "記号あり";
+            this.All.UseVisualStyleBackColor = true;
+            this.All.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // NonMark
+            // 
+            this.NonMark.AutoSize = true;
+            this.NonMark.Location = new System.Drawing.Point(166, 73);
+            this.NonMark.Name = "NonMark";
+            this.NonMark.Size = new System.Drawing.Size(74, 17);
+            this.NonMark.TabIndex = 5;
+            this.NonMark.TabStop = true;
+            this.NonMark.Text = "記号なし";
+            this.NonMark.UseVisualStyleBackColor = true;
+            this.NonMark.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // Mark2
+            // 
+            this.Mark2.AutoSize = true;
+            this.Mark2.Location = new System.Drawing.Point(314, 73);
+            this.Mark2.Name = "Mark2";
+            this.Mark2.Size = new System.Drawing.Size(89, 17);
+            this.Mark2.TabIndex = 6;
+            this.Mark2.TabStop = true;
+            this.Mark2.Text = "記号２文字";
+            this.Mark2.UseVisualStyleBackColor = true;
+            this.Mark2.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 212);
-            this.Controls.Add(this.IsNonMark);
+            this.Controls.Add(this.Mark2);
+            this.Controls.Add(this.NonMark);
+            this.Controls.Add(this.All);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.NumOfLetters);
             this.Controls.Add(this.label1);
@@ -109,7 +138,9 @@ namespace PasswordCreatorUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown NumOfLetters;
         private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.CheckBox IsNonMark;
+        private System.Windows.Forms.RadioButton All;
+        private System.Windows.Forms.RadioButton NonMark;
+        private System.Windows.Forms.RadioButton Mark2;
     }
 }
 
