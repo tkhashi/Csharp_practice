@@ -18,11 +18,34 @@ namespace WPF_PasswordCreator
                 isNonMark = value;
                 if (isNonMark) {
                     factory = new NonMarkLetterFactory();
-                } else {
+                }
+            }
+        }
+
+        private bool isAll;
+        public bool IsAll
+        {
+            get{ return isAll; }
+            set {
+                isAll = value;
+                if (isAll) {
                     factory = new AllLetterFactory();
                 }
             }
         }
+
+        private bool isMark2;
+        public bool IsMark2
+        {
+            get{ return isMark2; }
+            set {
+                isMark2 = value;
+                if (isMark2) {
+                    factory = new Mark2LetterFactory();
+                }
+            }
+        }
+
         private int numOfLetters;
         public int NumOfLetters
         {
@@ -45,7 +68,7 @@ namespace WPF_PasswordCreator
         public MainWindowVM()
         {
             NumOfLetters = 20;
-            IsNonMark = false;
+            IsAll = true;
             MakePassword = new DelegateCommand(MakePasswordExecute, CanMakePasswordExecute);
         }
         private bool CanMakePasswordExecute()
