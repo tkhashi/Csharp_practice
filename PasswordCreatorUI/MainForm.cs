@@ -39,6 +39,7 @@ namespace PasswordCreatorUI
         {
             string pw = controller.MakePasssword();
             Password.Text = pw;
+            Clipboard.SetText(pw);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
