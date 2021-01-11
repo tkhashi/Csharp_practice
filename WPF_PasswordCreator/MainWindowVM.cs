@@ -19,7 +19,7 @@ namespace WPF_PasswordCreator
                 if (isNonMark) {
                     factory = new NonMarkLetterFactory();
                 } else {
-                    factory = new AllLetterFactory();
+                    factory = new Mark2LetterFactory();
                 }
             }
         }
