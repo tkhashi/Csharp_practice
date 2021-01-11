@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Password_Creater;
+using System.Windows.Forms;
 
 namespace WPF_PasswordCreator
 {
@@ -56,7 +57,9 @@ namespace WPF_PasswordCreator
         public string CreatedPassword
         {
             get { return createdPassword;}
-            set { createdPassword = value; OnPropertyChanged(); }
+            set { createdPassword = value;
+                Clipboard.SetText(createdPassword);
+                OnPropertyChanged(); }
         }
         public DelegateCommand MakePassword { get; private set; }
         private void MakePasswordExecute()
