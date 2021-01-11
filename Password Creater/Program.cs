@@ -10,7 +10,7 @@ namespace Password_Creater
         static void Main(string[] args) {
             Random random = new Random();
             int count = 14;
-            ILetterFactory factory = new AllLetterFactory(); 
+            ILetterFactory factory = new Mark2LetterFactory(); 
             PasswordGenerator generator = new PasswordGenerator(random);
             string password = generator.MakePassword(count, factory);
             Console.WriteLine(password);
