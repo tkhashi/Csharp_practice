@@ -8,13 +8,13 @@ namespace Password_Creater
 {
     public class LowerLetter : Letter
     {
-        public LowerLetter(Random random) : base(random)
-        {
-        }
+        public LowerLetter(Random random) : base(random) { }
         public override string GetLetter()
         {
-            char c = (char)random.Next(97, 123);
-            return c.ToString();
+            string[] lowers = Enumerable.Range(97, 123).Where(x => x != 108)
+                .Select(x => ((char)x).ToString()).ToArray();
+            int n = random.Next(lowers.Length);
+            return lowers[n];
         }
     }
 }

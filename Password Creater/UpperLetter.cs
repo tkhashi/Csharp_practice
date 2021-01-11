@@ -13,7 +13,11 @@ namespace Password_Creater
         }
         public override string GetLetter()
         {
-            char c = (char)random.Next(65, 91);
+            int n;
+            do {
+                n = random.Next(65, 91);
+            } while (n == 73 || n == 79);
+            char c = (char)n;
             return c.ToString();
         }
     }
