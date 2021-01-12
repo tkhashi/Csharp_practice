@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Password_Creater;
+using PasswordCreator;
 using System.Windows.Forms;
 
 namespace WPF_PasswordCreator
